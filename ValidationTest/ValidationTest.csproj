@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Microsoft.DotNet.PackageValidation" Version="1.0.0-preview.5.21302.8" />
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TargetFramework>net5.0</TargetFramework>
+    <!-- This one does not work -->
+    <PackageVersion>14.0.0.0</PackageVersion>
+    <!-- This one works -->
+    <!--<PackageVersion>14.0.0</PackageVersion>-->
+
+    <!-- Just comparing against a random nuget.org package for demo purposes -->
+    <PackageId>Newtonsoft.Json</PackageId>
+    <PackageValidationBaselineVersion>13.0.1</PackageValidationBaselineVersion>
+  </PropertyGroup>
+
+</Project>
